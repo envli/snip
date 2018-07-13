@@ -1,0 +1,38 @@
+{
+	"name": "snip",
+	"version": "0.0.1",
+	"description": "Yet another snippet tool",
+	"main": "src/main.js",
+	"scripts": {
+		"start": "electron .",
+		"dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --env.module",
+		"watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --env.module",
+		"watch-poll": "npm run watch -- --watch-poll",
+		"hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js --env.module",
+		"prod": "npm run production",
+		"production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --env.module"
+	},
+	"repository": "https://github.com/envli/snip",
+	"keywords": [
+		"Electron",
+		"snippet",
+		"lightweight",
+		"github",
+		"snip"
+	],
+	"author": "env.li",
+	"license": "CC0-1.0",
+	"devDependencies": {
+		"electron": "^2.0.0",
+		"axios": "0.17.1",
+		"cross-env": "5.1.3",
+		"laravel-mix": "1.7.2",
+		"lodash": "^4.17.4",
+		"nice-date": "0.1.12",
+		"vue": "2.5.13",
+		"vue-router": "3.0.1",
+		"vue-template-compiler": "2.5.13",
+		"vuex": "^3.0.1",
+		"webpack-livereload-plugin": "1.0.0"
+	}
+}
